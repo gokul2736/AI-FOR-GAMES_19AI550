@@ -1,10 +1,11 @@
 # Ex.No: 5  Implementation of Steering behaviour-Pursue and Evade in Unity
-### DATE:                                                                            
-### REGISTER NUMBER : 
+### DATE: 29/7/2026 
+### NAME: Markandeyan Gokul
+### REGISTER NUMBER : 212224240086
 ### AIM: 
 To write a program to simulate the process of Pursue and Evade behavior in Unity using NavigationMeshAgent. 
 ### Algorithm:
-```
+
 1. Create a New Unity Project by Open the  Unity Hub and create a new 3D Project.
 2. Name the project "SteeringBehaviors" and select a location. Click Create.
 3.Open Unity Scene (default is SampleScene).
@@ -29,7 +30,7 @@ To write a program to simulate the process of Pursue and Evade behavior in Unity
     Pursuer: Set Speed = 4.
     Evader: Set Speed = 6.
 5. Write a script for  Player_movement behavior and save it
-
+```
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,7 +52,10 @@ public class Player_movement : MonoBehaviour
         
     }
 }
+
+```
 **Evader script**
+```
 public class Evader : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -76,7 +80,9 @@ public class Evader : MonoBehaviour
         evade();          
      }
 }
+```
 **Pursuer script**
+```
 public class Pursuer: MonoBehaviour
 {
     // Start is called before the first frame update
@@ -100,21 +106,19 @@ public class Pursuer: MonoBehaviour
         pursue();          
      }
 }
+```
 7. Attach the Script to each player,pursuer and Evader.
    Drag & Drop the Target from the Hierarchy into the "Target" field in the script component ( For pursuer and Evader).
 12. Run the game 
 13. Stop the program
     
-```
+
 ### Output:
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0d9a7080-d522-47c2-b8a1-f14710d58716" />
 
 
-
-
-
-
-
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36474182-bc0b-43f2-b5bd-2d73585bd110" />
 
 ### Result:
 Thus the simple pursue and evade behavior was implemented successfully.
